@@ -14,7 +14,7 @@ There are unit tests in the source code for more details.
 #### About the source code
 The project was developed with DDD concepts in mind resulting on the following separation of  layers:
 
-- #####Web API
+- ##### Web API
    Responsible for exposing the funcionalities through HTTP using RESTFull concepts.
 - ##### Application
    Responsible for coordinating entities, services and repositories from the domain Layer and taking care of mapping between DTO's and Domain entities.
