@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "53718c02-ffae-475e-86a6-83015a7c932b",
+		"name": "OnlineUniversity",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Course By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44334/api/Courses/c74c4697-74d1-4015-b92c-77311e1417cb",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44334",
+					"path": [
+						"api",
+						"Courses",
+						"c74c4697-74d1-4015-b92c-77311e1417cb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up Student to Course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"courseId\": \"62419fa0-583b-4a1a-837e-3803d7f777cd\",\r\n  \"student\": {\r\n    \"name\": \"Test 6\",\r\n    \"email\": \"test6@test.com\",\r\n    \"dateOfBirth\": \"1989-02-05T11:11:30.047Z\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44334/api/course/sign-up",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44334",
+					"path": [
+						"api",
+						"course",
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44334/api/Courses",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44334",
+					"path": [
+						"api",
+						"Courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Courses Statistics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44334/api/CourseStatistics",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44334",
+					"path": [
+						"api",
+						"CourseStatistics"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
